@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+/* header/logo font-family: 'Rampart One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+/* italic notes font-family: 'Caveat', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+/* bold font font-family: 'Jua', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+/* font-family: 'Cutive Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', cursive; */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    background-image: url(images/background.png);
+}
+
+#navbar-logo {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.navbar {
+    /* background: #131313; */
+    height: 80px;
+    display: flex; /*NOTE puts items onto a row*/
+    justify-content: center;
+    align-items: center;
+    /* NOTE  1 rem is equivalent to 16px*/
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    /* NOTE #999 is used to ensure that no matter where you are on the site that this element will always remain above */
+    z-index: 999;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar-logo {
+    /* FIXME change colors */
+    background-color: #cdb4db;
+    background-image: linear-gradient(to top, #ffafcc 0%, #ffc8dd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    /* NOTE creates hand motion when an element is hovered over */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navbar-item {
+    height: 80px;
+}
+
+.navbar-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    /* FIXME colors */
+    background: #cdb4db;
+    color: #fff;
+}
+
+/* FIXME colors */
+
+.button:hover {
+    background: #a2d2ff;
+    transition: all 0.3s ease;
+}
+
+.navbar-links:hover {
+    color: #bde0fe;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbar-menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        /* NOTE ensures that the navbar menu will never be seen */
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background: #131313;
+    }
+
+    .navbar-menu.active {
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar-logo {
+        padding-left: 25px;
+    }
+
+    .navbar-toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .navbar-item {
+        width: 100%;
+    }
+
+    .navbar-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%,20%);
+    }
+
+    .navbar-btn {
+        padding-bottom: 2rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+/* NOTE creates a bar on the right side */
+    .navbar-toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+/* REVIEW */
+/* NOTE creates animation for the mobile menu */
+    /* NOTE targets the second child */
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        
+    }
+}

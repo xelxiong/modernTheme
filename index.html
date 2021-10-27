@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Dreamers Paradigm</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
 </head>
 
 <body>
+    <!-- SECTION nav -->
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="#" id="navbar-logo">Dreamers Paradigm</a>
+            <a href="index.html" id="navbar-logo"><i class="fas fa-cloud"></i> Dreamers Paradigm</a>
             <div class="navbar-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div> <!--NOTE this div is what we will target in JS for the functioning mobile menu-->
+            </div>
+            <!--NOTE this div is what we will target in JS for the functioning mobile menu-->
             <ul class="navbar-menu">
                 <li class="navbar-item">
-                    <a href="#" class="navbar-links"> Home </a>
+                    <a href="index.html" class="navbar-links"> Home </a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#" class="navbar-links"> Dream </a>
+                    <a href="dream.html" class="navbar-links"> Dream </a>
                 </li>
                 <li class="navbar-item">
                     <a href="#" class="navbar-links"> Creator </a>
@@ -36,6 +43,109 @@
         </div>
     </nav>
 
-<script src="script.js"></script>
+    <!-- SECTION hero -->
+    <div class="main">
+        <div class="main-container">
+            <div class="main-content">
+                <h1>Dreamers welcomed</h1>
+                <h2>EXPLORE. CREATE. RE-IMAGINE.</h2>
+                <p>Explore a Cyber World</p>
+                <button class="main-btn"><a href="#">Learn more..</a></button>
+            </div>
+            <!-- <div class="main-img-container">
+                <img src="images/cloudy-removebg-preview.png" alt="mainCloud" class="main-img">
+            </div> -->
+        </div>
+    </div>
+
+    <!-- SECTION services -->
+    <div class="services">
+        <h1>Explore the cyber world</h1>
+        <div class="services-container">
+            <div class="services-card">
+                <h2>Moon</h2>
+                <p>Human powered technology</p>
+                <button>Get Started</button>
+            </div>
+            <div class="services-card">
+                <h2>Night life</h2>
+                <p>Using adobe XD</p>
+                <button>Get Started</button>
+            </div>
+            <div class="services-card">
+                <h2>Sunset</h2>
+                <p>Using adobe XD</p>
+                <button>Get Started</button>
+            </div>
+            <div class="services-card">
+                <h2>Cyber Night</h2>
+                <p>Using adobe XD</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+        <audio controls autoplay loop hidden>
+            <source src="Octavian x Skepta - Papi Chulo (Instrumental).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h2>About Us</h2>
+                    <a href="/sign__-up">How it works</a> <a href="/">Testimonials</a>
+                    <a href="/">Careers</a> <a href="/">Investments</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2>Contact Us</h2>
+                    <a href="/">Contact</a> <a href="/">Support</a>
+                    <a href="/">Destinations</a> <a href="/">Sponsorships</a>
+                </div>
+            </div>
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h2>Videos</h2>
+                    <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+                    <a href="/">Agency</a> <a href="/">Influencer</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2>Social Media</h2>
+                    <a href="/">Instagram</a> <a href="/">Facebook</a>
+                    <a href="/">Youtube</a> <a href="/">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <section class="social-media">
+            <div class="social-media-wrap">
+                <div class="footer-logo">
+                    <a href="#" id="navbar-logo"><i class="fas fa-cloud"></i> Dreamers Paradigm</a>
+                </div>
+                <p class="website-rights">© dreamers paradigm 2021. All rights reserved</p>
+                <div class="social-icons">
+                    <a class="social-icon-link" href="/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="social-icon-link" href="/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="social-icon-link"
+                        href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber" target="_blank"
+                        aria-label="Youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="social-icon-link" href="/" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="social-icon-link" href="/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

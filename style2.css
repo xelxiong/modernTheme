@@ -245,7 +245,7 @@ body {
 }
 
 .main-content h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     background-color: #bde0fe;
     background-image: linear-gradient(to top, #ffafcc 0%, #cdb4db 100%);
     background-size: 100%;
@@ -255,26 +255,12 @@ body {
     -moz-text-fill-color: transparent;
 }
 
-.main-content h2 {
-    font-size: 4rem;
-    background-color: #bde0fe;
-    background-image: linear-gradient(to top, #a2d2ff 0%, #cdb4db 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.main-content p {
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-    color: white;
-}
+.main-content h1:hover, .main-content h1:active {
+    font-size: 7rem;
+  }
 
 .main-btn {
-    font-size: 1rem;
+    font-size: 2rem;
     background-image: linear-gradient(to top, #a2d2ff 0%, #cdb4db 100%);
     padding: 14px 32px; 
     border: none;
@@ -315,15 +301,6 @@ body {
     width: 100%;
 }
 
-.main-img-container {
-    text-align: center;
-}
-
-#main-img {
-    height: 80%;
-    width: 80%;
-}
-
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     .main-container {
@@ -346,14 +323,6 @@ body {
         margin-top: 2rem;
     }
 
-    .main-content h2 {
-        font-size: 3rem;
-    }
-
-    .main-content p {
-        margin-top: 1rem;
-        font-size: 1.5rem;
-    }
 }
 
 /* NOTE this is for smaller screens */
@@ -363,24 +332,10 @@ body {
         margin-top: 3rem;
     }
 
-    .main-content h2 {
-        font-size: 2rem;
-    }
-
-    .main-content p {
-        margin-top: 2rem;
-        font-size: 1.5rem;
-    }
-
     .main-btn {
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
-}
-
-.main-img-container img {
-    width: 140%;
-    height: 200%;
 }
 
   /* SECTION custom scroll bar */
@@ -398,11 +353,11 @@ body {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: black;
+    background: #394180;
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #6AA0BE;
   }
